@@ -1,4 +1,4 @@
-(load "mp3-db.asd")
-(ql:quickload :mp3-db)
-(in-package :mp3-db)
+(load "hello-world.asd")
+(ql:quickload :hello-world)
+(in-package :hello-world)
 (start-server)

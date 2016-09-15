@@ -1,12 +1,11 @@
-(asdf:defsystem #:mp3-db
+(asdf:defsystem #:hello-world
     :serial t
-    :description "MP3 database"
+    :description "Simple Web app boiler-plate using Common Lisp"
     :depends-on (#:hunchentoot
                 #:cl-who
                 #:parenscript
-                #:smackjack
-                #:yason)
+                #:smackjack)
     :components ((:file "package")
                 (:module :src
                         :serial t
-                        :components ((:file "mp3-db")))))
+                        :components ((:file "app")))))

@@ -1,3 +1,3 @@
 ;;;; package.lisp
-(defpackage #:mp3-db
+(defpackage #:hello-world
   (:use :cl :cl-who :hunchentoot :parenscript :smackjack ))

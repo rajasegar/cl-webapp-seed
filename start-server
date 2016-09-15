@@ -1,0 +1,2 @@
+#!/bin/sh
+nodemon --exec "sbcl --load" local-server.lisp

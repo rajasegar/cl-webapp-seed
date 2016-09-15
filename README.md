@@ -1,12 +1,11 @@
-# cl-simple-database
-A Simple Database web application using Common Lisp from Practical Common Lisp by Peter Siebel
+# cl-webapp-seed
+A simple web application boilerplate using Common Lisp 
 
 ## Dependencies
 Hunchentoot
 Parenscript
 Smackjack
 cl-who
-yason (not used currently in the app)
 
 To run the demo locally, clone the repo and load "local-server.lisp" in you LISP environment.
 
