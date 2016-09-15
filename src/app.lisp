@@ -23,7 +23,7 @@
             ,@body))))
 
 (define-easy-handler (app :uri "/") ()
-    (main-layout (:title "MP3 Database"
+    (main-layout (:title "Hello World, Lisp"
                 :script (ps
                             (chain console (log "Hello world"))))
                  (:h2 "Welcome to Common Lisp web development...")))
