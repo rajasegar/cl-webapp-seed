@@ -1,8 +1,15 @@
 (in-package :hello-world)
 
 ;; Define hunchentoot dispatch table
-(setq *dispatch-table*
-      (list
-       (create-regex-dispatcher "^/$" 'home-page)
-       (create-static-file-dispatcher-and-handler "/styles.css"  "static/styles.css")
-       (create-static-file-dispatcher-and-handler "/lisp-logo120x80.png"  "static/lisp-logo120x80.png")))
+(push (create-folder-dispatcher-and-handler "/" (merge-pathnames "static/"  ;; starts without a /
+                                   (asdf:system-source-directory :hello-world)))
+      *dispatch-table*)
+
+(defroute home ("/") ()
+  (render-template* +home.html+ nil
+                        :title "Ukeleles" ))
+
+
+(defroute about ("/about") ()
+  (render-template* +about.html+ nil
+                        :special "About Special" ))
