@@ -2,7 +2,6 @@
 
 (setf (html-mode) :html5)
 
-;; (add-template-directory (asdf:system-relative-pathname "hello-world" "templates/"))
 (add-template-directory  "/app/templates/")
 
 (defparameter +base.html+ (djula:compile-template* "base.html"))
